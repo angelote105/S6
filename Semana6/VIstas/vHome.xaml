@@ -50,7 +50,35 @@
                 </CollectionView>
             </Grid>
         </Frame>
-       
-        
+        <Frame Margin="20" Padding="5" HasShadow="True" BorderColor="Black" CornerRadius="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+
+                <BoxView Color="AliceBlue" Grid.ColumnSpan="4" />
+
+
+                <Label x:Name="Nombre" Grid.Row="0"   Grid.Column="0"  TextColor="Blue" Text="Nombre" FontAttributes="Bold"/>
+                <Label x:Name="Apellido" Grid.Row="0" Grid.Column="1"  TextColor="Blue" Text="Apellido" FontAttributes="Bold"/>
+                <Label x:Name="Edad" Grid.Row="0"     Grid.Column="2"  TextColor="Blue" Text="Edad" FontAttributes="Bold"/>
+
+
+                <Entry x:Name="txtNombre" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtApellido" Grid.Row="1" Grid.Column="1"/>
+                <Entry x:Name="txtEdad" Grid.Row="1" Grid.Column="2"/>
+                <Button Text="Ingresar" Grid.Row="2" Grid.ColumnSpan="3"/>
+
+            </Grid>
+        </Frame>
+
     </VerticalStackLayout>
 </ContentPage>
