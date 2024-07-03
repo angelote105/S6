@@ -23,4 +23,20 @@ public partial class vHome : ContentPage
 
 		listaEstudiantes.ItemsSource = estu;
 	}
+
+    private void btnIngresar_Clicked(object sender, EventArgs e)
+    {
+		Estudiante nuevoEstudiante = new Estudiante
+		{
+			nombre = txtNombre.Text,
+			apellido = txtApellido.Text,
+			edad = int.Parse(txtEdad.Text),
+            // Otras propiedades del estudiante
+            
+        };
+        estu.Add(nuevoEstudiante);
+
+        listaEstudiantes.ItemsSource = null; 
+        listaEstudiantes.ItemsSource = estu;
+    }
 }

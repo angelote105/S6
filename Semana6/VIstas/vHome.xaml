@@ -25,10 +25,10 @@
 
                 <BoxView Color="AliceBlue" Grid.ColumnSpan="4" />
                 
-                <Label x:Name="Codigo" Grid.Row="0"   Grid.Column="0"  TextColor="Red" Text="Codigo" FontAttributes="Bold"/>
-                <Label x:Name="Nombre" Grid.Row="0"   Grid.Column="1"  TextColor="Red" Text="Nombre" FontAttributes="Bold"/>
-                <Label x:Name="Apellido" Grid.Row="0" Grid.Column="2"  TextColor="Red" Text="Apellido" FontAttributes="Bold"/>
-                <Label x:Name="Edad" Grid.Row="0"     Grid.Column="3"  TextColor="Red" Text="Edad" FontAttributes="Bold"/>
+                <Label  Grid.Row="0"   Grid.Column="0"  TextColor="Red" Text="Codigo" FontAttributes="Bold"/>
+                <Label  Grid.Row="0"   Grid.Column="1"  TextColor="Red" Text="Nombre" FontAttributes="Bold"/>
+                <Label  Grid.Row="0" Grid.Column="2"  TextColor="Red" Text="Apellido" FontAttributes="Bold"/>
+                <Label  Grid.Row="0"     Grid.Column="3"  TextColor="Red" Text="Edad" FontAttributes="Bold"/>
 
                 <CollectionView x:Name="listaEstudiantes" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4">
                     <CollectionView.ItemTemplate>
@@ -75,7 +75,7 @@
                 <Entry x:Name="txtNombre" Grid.Row="1" Grid.Column="0"/>
                 <Entry x:Name="txtApellido" Grid.Row="1" Grid.Column="1"/>
                 <Entry x:Name="txtEdad" Grid.Row="1" Grid.Column="2"/>
-                <Button Text="Ingresar" Grid.Row="2" Grid.ColumnSpan="3"/>
+                <Button Text="Ingresar" Grid.Row="2" Grid.ColumnSpan="3" x:Name="btnIngresar" Clicked="btnIngresar_Clicked"/>
                 
             </Grid>
         </Frame>
