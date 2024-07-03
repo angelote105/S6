@@ -77,6 +77,7 @@
                 <Entry x:Name="txtEdad" Grid.Row="1" Grid.Column="2"/>
                 <Button Text="Ingresar" Grid.Row="2" Grid.ColumnSpan="3"/>
 
+                
             </Grid>
         </Frame>
 
